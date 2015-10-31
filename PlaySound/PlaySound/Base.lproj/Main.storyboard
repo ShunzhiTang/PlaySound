@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xhJ-gY-gbA">
+                                <rect key="frame" x="285" y="110" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="6Md-Gp-5Sx"/>
+                                    <constraint firstAttribute="width" constant="30" id="xTG-gv-qNs"/>
+                                </constraints>
+                                <state key="normal" title="不要"/>
+                                <connections>
+                                    <action selector="buyao" destination="BYZ-38-t0r" eventType="touchUpInside" id="3m1-bE-Ny6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bsW-TD-ond">
+                                <rect key="frame" x="285" y="263" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="drR-eT-kak"/>
+                                    <constraint firstAttribute="width" constant="30" id="sVe-7b-PkV"/>
+                                </constraints>
+                                <state key="normal" title="胜利"/>
+                                <connections>
+                                    <action selector="win:" destination="BYZ-38-t0r" eventType="touchUpInside" id="syC-qR-kXf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZJU-WF-eie">
+                                <rect key="frame" x="285" y="439" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="lb8-Jk-Pih"/>
+                                    <constraint firstAttribute="width" constant="30" id="qIp-ND-yWY"/>
+                                </constraints>
+                                <state key="normal" title="失败"/>
+                                <connections>
+                                    <action selector="lose:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2lC-8l-7lk"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.91372555489999996" green="0.99215692280000001" blue="0.87843143940000001" alpha="1" colorSpace="deviceRGB"/>
+                        <constraints>
+                            <constraint firstItem="ZJU-WF-eie" firstAttribute="top" secondItem="bsW-TD-ond" secondAttribute="bottom" constant="146" id="Cum-c4-OM0"/>
+                            <constraint firstItem="bsW-TD-ond" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KVj-OO-9kY"/>
+                            <constraint firstItem="ZJU-WF-eie" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Pic-ge-qgu"/>
+                            <constraint firstItem="bsW-TD-ond" firstAttribute="top" secondItem="xhJ-gY-gbA" secondAttribute="bottom" constant="123" id="bgG-0V-EXz"/>
+                            <constraint firstItem="xhJ-gY-gbA" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="90" id="djG-IF-vxS"/>
+                            <constraint firstItem="xhJ-gY-gbA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xN8-dN-eXY"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
